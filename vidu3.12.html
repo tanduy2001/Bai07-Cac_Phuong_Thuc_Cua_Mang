@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ví dụ 3.12</title>
+</head>
+<body>
+    <script>
+        var arr = new Array(1, 2, 4, 5, 9, 6);
+           document.write(arr.join(', ') + '<br>')//=> 1, 2, 4, 5, 9, 6
+
+           arr.splice(0, 0, 3, 8, 7, 10);//thêm các phần tử 3, 8, 7, 10 từ vị trí số 0 và không xóa phần tử nào
+           //arr.splive('vị trị muốn thêm', 'số phần tử muốn xóa kể từ vị trí thêm mảng', 'phần tử cần thêm', 'phần tử cần thêm'...)
+           document.write(arr.join(', ') + '<br>')//=> 3, 8, 7, 10, 1, 2, 4, 5, 9, 6
+    </script>
+</body>
+</html>
